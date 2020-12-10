@@ -16,7 +16,7 @@ class JacobStack {
   // This method pops the item on top of the stack and returns it
   popNumber() {
     if (this.STACK_AS_ARRAY.length <= 0) {
-      throw "ERROR";
+      throw "ERROR: Null Received";
     } else {
       this.poppedNumber = this.STACK_AS_ARRAY[this.STACK_AS_ARRAY.length - 1];
       this.STACK_AS_ARRAY.length = this.STACK_AS_ARRAY.length - 1;

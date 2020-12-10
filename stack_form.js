@@ -17,7 +17,7 @@ try {
   console.log();
 
   if (isNaN(stackSize) == true) {
-    console.log("ERROR: Invalid Input");
+    throw "ERROR: Invalid Input";
   } else {
     for (let counter = 0; counter < stackSize; counter++) {
       // User input for an integer for the stack
@@ -26,9 +26,7 @@ try {
 
       // Placing the inputted integer on the stack
       if (isNaN(userInput) == true) {
-        // Output for an error if the user inputs something that is not a number
-        console.log("ERROR: Invalid Input");
-        break;
+        throw "ERROR: Invalid Input";
       } else {
         // Pushing and verifying the inputted number to the top of the stack
         stack.pushNumber(userInput);
@@ -46,8 +44,8 @@ try {
     }
   }
 
-  // Catches and tells the user that an improper input was entered
+  // Catches and tells the user what error occured
 } catch (err) {
-  console.log("ERROR: Invalid Input");
+  console.log("");
+  console.error(err);
 }
-
