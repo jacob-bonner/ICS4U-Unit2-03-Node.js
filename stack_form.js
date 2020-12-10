@@ -1,6 +1,7 @@
 // Created By: Jacob Bonner
 // Created On: December 2020
-// This program pushes a user inputted integer to a stack.
+// This program pushes a user inputted integer to a stack and
+//   pops back the last two integers.
 
 // Importing the class JacobStack from another file
 const JacobStack = require("./jacob_stack");
